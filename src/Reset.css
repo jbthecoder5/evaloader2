@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin:0;
+    padding: 0;
+}
+
+
+nav, section, footer, 
+header, a, li, button {
+    display: block;
+}
+
+a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+
+a:link, 
+a:visited {
+
+}
+
+a:hover, 
+a:active {
+    
+}

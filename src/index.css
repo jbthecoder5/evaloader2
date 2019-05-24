@@ -1,13 +1,211 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* the first section 
+content of the index page
+*/
+
+.sec-imgHolder {
+    height: 650px;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+ 
+.sec-img {
+    height: 400px;
+    max-width: 100%;
+    width: 75%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.sec-content {
+    height: 650px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sec-msg, .sec-submsg,
+.sec-grid {
+    width: 100%;
+}
+
+.sec-msg {
+    margin-bottom: 2.5em;
+}
+
+.sec-msg h1 {
+    color: #313030;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.sec-msg p {
+    color: #959595;
+    font-family: Geneva, Tahoma, sans-serif;
+    text-align: justify;
+}
+
+.sec-submsg h4 {
+    color: #313030;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 
+    'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    margin-bottom: 1.9em;
+}
+
+.sec-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.sec-grid .sec-service {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.sec-service i {
+    margin-right: 0.5em;
+    width: 30px;
+    height: 30px;
+}
+
+
+.sec-service p {
+    color: #157A9F;
+}
+
+.sec-service .sec-desc {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    
+}
+
+/*  second section content 
+    of the index page
+*/
+
+
+.sec-content2 {
+    height: 650px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec-msg {
+    width: 83%;
+}
+
+.sec-msg .sec-h {
+    color: #313030;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.sec-msg .success-desc {
+    color: rgb(255, 255, 255);
+    font-family: Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1em;
+    text-align: justify;
+    letter-spacing: 1px;
+    line-height: 1.7em;
+}
+
+.sec-imgHolder2 {
+    height: 650px;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center
+}
+
+.sec-img2 {
+    height: 400px;
+    max-width: 100%;
+    width: 75%;
+}
+
+
+
+@media (max-width: 750px) {
+    /*
+
+    ### section 1 styling
+
+    */
+
+    .sec-imgHolder {
+        height: 350px;
+        width: 80%;
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+     
+    .sec-img {
+        height: 350px;
+        max-width: 100%;
+        width: 80%;
+    }
+
+    .sec-content {
+        height: 650px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sec-grid {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    /*
+
+    ### section 2 styling
+
+    */
+
+    .sec-content2 {
+        height: 500px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .sec-msg {
+        width: 100%;
+    }
+
+    .sec-imgHolder2 {
+        height: 400px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center
+    }
+    
+    .sec-img2 {
+        height: 300px;
+        max-width: 100%;
+        width: 80%;
+    }
 }
